@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b81fe35c5c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto+Mono&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="icon" type="image/png" href="../imgs/favicon-32x32.png" sizes="32x32" />
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <header id="header">
+        <h2 class="header__h2">Bienvenido <span class="header__span">!</span> !</h2>
+    </header>
+    <main>
+        <form action=""class="formulario" id="formulario">
+            <div class="tres__columnas">
+                <div class="formulario__grupo" id="grupo__usuario">
+                    <label for="usuario" class="formulario__label">Usuario</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                </div>
+        
+                <div class="formulario__grupo" id="grupo__password">
+                    <label for="password" class="formulario__label">Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password" id="password">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">La contraseña debe tener más de 8 a 16 dígitos y al menos una mayúscula, una minúscula y un número</p>
+                </div>
+
+        
+                <div class="formulario__grupo" id="grupo__password2">
+                    <label for="password2" class="formulario__label">Repetir Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password2" id="password2">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+                </div>
+            </div>
+           
+            <div class="formulario__grupo" id="grupo__newsletter">
+                <label for="newsletter" class="formulario__label">
+                    <input type="checkbox" class="formulario__checkbox" name="newsletter" id="newsletter" >
+                    Desea recibir actualizaciones, informes de tendencias y novedades?
+                </label>
+            </div>
+    
+            <div class="formulario__grupo" id="grupo__intereses">
+                <label for="intereses" class="formulario__label">Nos encantaría conocer sus opiniones y sugerencias</label>
+                <div class="formulario__grupo-input">
+                    <textarea name="intereses" class="formulario__textarea" id="intereses"maxlength="200" ></textarea>
+                </div>
+            </div>
+    
+            <div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+            
+            <div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor, completa los campos obligatorios. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+        </form>
+    </main>
+    <script src="../js/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/b81fe35c5c.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+
+header {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 15rem;
+  background-color:var(--fondo-color) ;
+  overflow: hidden;
+}
+
+.uno{
+  display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  width: 100%;
+  background-image: url(../imgs/4052b5aa398d5f0eab325549560ed9f2-diosa-griega-artemisa.png);
+  background-repeat: no-repeat;
+  background-size: 15rem; 
+}
+
+.dos{
+  display: grid;
+  grid-template-columns:  1fr;
+  grid-template-rows: 2fr 1fr;
+}
+
+#animation-uno{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  align-items: center;
+  animation: myfirst 3.5s;
+  animation-fill-mode: forwards;/*TODO EL PUTO DIA BUSCANDO ESTO!!*/
+}
+
+@keyframes  myfirst {
+  0%  { left:110%; top: 0px; }
+  100%{left:0; top: 0px; } }
+
+#marca{
+  position:absolute;
+  left: 0;
+	padding-top: 2rem;
+  font-size:2.5rem;
+  color: var(--fuente-clara);  
+}
+
+#marca span{
+	font-size:3rem;
+	font-weight:bold;
+}
+
+#animation-dos{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  padding-bottom: 2rem;
+  justify-content: right;
+  opacity: 0;
+  animation: mysecond 6s ;
+  animation-fill-mode: backwards;  
+}
+
+#animation-dos img{
+  height: 100%;
+  width:90%;
+  left: 110%;
+  opacity: 1; 
+}
+
+@keyframes mysecond {
+  0%  { left:110%; top: 0px; opacity: 1;}
+  50% { opacity: 1;left: 20%; top: 0px;}
+  100%{opacity: 0;left: 20%; top: 0px;}
+}
+
+
+/*// MEDIA QUERY //*/
+@media screen and (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr 2fr;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .uno{
+    margin-left: 3rem ;
+    background-size: 12rem;
+  }
+  
+}
+
+@media screen and (max-width: 300px){
+  header {
+    grid-template-columns: 2fr 3fr;
+  }
+  
+  .uno{
+    margin-left: 1rem ;
+    background-size: 10rem;
+  }
+  #marca{
+    position:absolute;
+    left: 0;
+    padding-top: 2rem;
+    font-size:2rem;
+    color: var(--fuente-clara);  
+  }
+  
+  #marca span{
+    font-size:2.5rem;
+    font-weight:bold;
+  }
+}
+

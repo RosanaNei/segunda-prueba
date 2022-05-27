@@ -1,0 +1,199 @@
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr .2fr;
+    width: 100%;
+    height: auto;
+    min-height:30rem;
+    background-color: #607b50;
+    background-image:url(../imgs/wave4.svg), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cpath fill='%2367544d' fill-opacity='0.48' d='M0 17.83V0h17.83a3 3 0 0 1-5.66 2H5.9A5 5 0 0 1 2 5.9v6.27a3 3 0 0 1-2 5.66zm0 18.34a3 3 0 0 1 2 5.66v6.27A5 5 0 0 1 5.9 52h6.27a3 3 0 0 1 5.66 0H0V36.17zM36.17 52a3 3 0 0 1 5.66 0h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 0 1 0-5.66V52H36.17zM0 31.93v-9.78a5 5 0 0 1 3.8.72l4.43-4.43a3 3 0 1 1 1.42 1.41L5.2 24.28a5 5 0 0 1 0 5.52l4.44 4.43a3 3 0 1 1-1.42 1.42L3.8 31.2a5 5 0 0 1-3.8.72zm52-14.1a3 3 0 0 1 0-5.66V5.9A5 5 0 0 1 48.1 2h-6.27a3 3 0 0 1-5.66-2H52v17.83zm0 14.1a4.97 4.97 0 0 1-1.72-.72l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1 0-5.52l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43c.53-.35 1.12-.6 1.72-.72v9.78zM22.15 0h9.78a5 5 0 0 1-.72 3.8l4.44 4.43a3 3 0 1 1-1.42 1.42L29.8 5.2a5 5 0 0 1-5.52 0l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1-.72-3.8zm0 52c.13-.6.37-1.19.72-1.72l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43a5 5 0 0 1 5.52 0l4.43-4.43a3 3 0 1 1 1.42 1.41l-4.44 4.43c.36.53.6 1.12.72 1.72h-9.78zm9.75-24a5 5 0 0 1-3.9 3.9v6.27a3 3 0 1 1-2 0V31.9a5 5 0 0 1-3.9-3.9h-6.27a3 3 0 1 1 0-2h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 1 1 2 0v6.27a5 5 0 0 1 3.9 3.9h6.27a3 3 0 1 1 0 2H31.9z'%3E%3C/path%3E%3C/svg%3E") ;
+    background-repeat:no-repeat,  repeat;
+    background-position: bottom , center;
+    color: var(--fondo-color);
+    padding-bottom: 1rem;
+}
+
+.contact-info{
+    padding:1rem;
+    display: flex;   
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+.contact-info-texto{
+    font-weight:800;
+}
+
+#contact-info-texto-adress{
+    padding-left:2.5rem;
+    padding-bottom: 1rem;
+}
+
+#contact-info-texto-codigo{
+    padding-left: 4rem;
+    padding-bottom: 1rem;
+}
+
+#contact-info-texto-tel{
+    padding-left: 5rem;
+    padding-bottom: 1rem;
+}
+
+.contact-images{
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    justify-content: center;
+}
+
+#map{
+    width: 80%;
+    margin:0 1rem 2rem 1rem;
+    z-index: 3;
+}
+
+#map button{
+    font-family:'Poppins', sans-serif;
+    font-size: 1.3rem;
+    background-color: transparent;
+    color: var(--fondo-color);
+    padding: 2rem;
+    border: 1px solid var(--fondo-color);
+    border-radius: 1rem;
+    margin:2rem;
+}
+
+#map button:hover{
+    color: var(--fuente-clara);
+    font-weight: 900;
+}
+
+#dropdown-mapa{
+    display: none;
+    position: relative;
+    padding-bottom: 75%;
+    height:0;
+    overflow: hidden;
+}
+
+#dropdown-mapa iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-images-sidenav{
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;  
+}
+
+.contact-images-sidenav a{
+    font-size: 2.5rem;
+    width:3rem;
+    height:3rem;
+    padding-right: .4rem;
+    padding-top: .3rem;
+    background-color:var(--fondo-color);
+    color:var(--fuente-clara);
+    margin:1rem;
+    border-radius: .8rem;
+}
+
+#twitter:hover{
+    background-color: #1da1f2;
+    transform:scale(1.5);
+}
+#facebook:hover{
+    background-color: #1877f2;
+    transform:scale(1.5);
+}
+
+#whatsapp:hover{
+    background-color: #25d366;
+    transform:scale(1.5);
+}
+
+#instagram:hover{
+    background-color: #c32aa3;
+    transform:scale(1.5);
+}
+
+#facebook:hover{
+    background-color: #1877f2;
+    transform:scale(1.5);
+}
+
+#linkedin:hover{
+    transform:scale(1.5);
+    background-color: #0a66c2;
+}
+
+#formulario{
+    padding-left: 2rem;
+    margin: 0;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+#formulario a{ 
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    justify-content:left;
+    align-items: flex-end;
+    font-size: .9rem;
+    color: var(--fuente-clara);
+}
+
+#formulario .fa-microchip{
+    font-size: 3rem;
+    color: rgb(194, 136, 30);
+    margin-right: 2rem;
+    cursor: pointer;
+    
+}
+#formulario a:hover{
+    filter: brightness(2);
+}
+
+#sugerencia-2{
+    padding-left: 2rem;
+}
+
+
+
+
+@media screen and (max-width: 360px){
+    footer{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-images-sidenav{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        flex-direction: row;
+        justify-content: space-around;  
+    }
+    
+    .contact-images-sidenav a{
+        font-size: 2.3rem;
+        width:2.8rem;
+        height:2.8rem;
+    }
+    .contact-info{
+        grid-column: 1/2;
+        grid-row:2/3;
+    }
+    .contact-images{
+        grid-column: 1/2;
+        grid-row:3/4;
+    }
+    #formulario{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+}
