@@ -6,25 +6,7 @@ main{
     background-color: var(--fondo-colorL);
   }
 
-  
-  @media (max-width: 900px) {
-    main{
-      grid-template-columns: 4fr 1fr;
-      grid-template-areas: "section aside";
-     
-    }
-    section{
-      grid-column: 1/2;
-      grid-row: 1/3;
-     
-    }
-    aside{
-      grid-column:2/3;
-      grid-row: 1/5;
-    }
-  }
-
-  @media (max-width: 768px){
+  @media (max-width: 900px){
     section{
       grid-column: 1/3;
       grid-row: 1/3;
